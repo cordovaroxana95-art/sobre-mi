@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <!-- Favicon con las letras RC -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbm5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgcmFuLXNlcmlmIiBmb250LXNpemU9IjYwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzMzMyI+UkM8L3RleHQ+PC9zdmc+" type="image/svg+xml">
+    
+    <!-- Enlace a Google Fonts para la tipografía Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS y estilo personalizado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <style>
+        body {
+            /* Se aplica la tipografía Poppins a todo el cuerpo del documento */
+            font-family: 'Poppins', sans-serif;
+            /* Se añade una transición suave para el cambio de color de fondo */
+            transition: background-color 0.5s ease;
+        }
+        
+        /* Secciones de CSS de 'sobre mi.css' se incluirían aquí */
+        /* Por ejemplo, si tenías estilos para el h1 o las tarjetas */
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-primary-subtle">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">sobre mi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mi info
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/ing-roxana-cordova/">Linkedin</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/cordovaroxana95-art/acronimo">github</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search"/>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <!-- fila #1 del grid - seccion principal -->
+        <div class="row align-items-center">
+            <!-- columna 1 -->
+            <div class="col-md-6 text-center">
+                <h1 class="display-4-fw-bold">hola! soy <span class="text-primary">Roxana Cordova de la Cruz ❤️</span></h1>
+                <p class="lead my-3"> Ing. desarrolladora de paginas Web. 🧷</p>
+                <button type="button" class="btn btn-primary">conoceme</button>
+            </div>
+            <!-- columna 2 -->
+            <div class="col-md-6 mt-4">
+                <!-- Se reemplaza la imagen local por un marcador de posición -->
+                <img src="./imgf/foto mi.png" class="img-fluid rounded-circle" alt="imagen formal ing-roxana-cordova">
+            </div>
+        </div>
+
+        <!-- segunda fila de grid - seccion de tarjetas -->
+        <div class="row my-5">
+            <!-- columna #1 - tarjeta de habilidades -->
+            <div class="col"></div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Habilidades tecnicas</h5>
+                    <p class="card-text">Mi valor como desarrolladora Full Stack de JavaScript es una combinación única de mis habilidades técnicas con la disciplina y el pensamiento sistémico </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">THML, CSS, Bootstrap</li>
+                    <li class="list-group-item">Java script</li>
+                    <li class="list-group-item">Scrum Master</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">https://github.com/cordovaroxana95-art</a>
+                </div>
+            </div>
+            <!-- columna #2 tarjeta de experiencia -->
+            <div class="col"></div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Experiencia</h5>
+                    <p class="card-text">Desarrolladora Full Stack de JavaScript con un enfoque único de Ingeniería Industrial. Mi experiencia en optimización de procesos, aseguramiento de la calidad y gestión de proyectos me permite no solo escribir código, sino diseñar soluciones eficientes y escalables que mejoran la productividad del equipo y el rendimiento de la aplicación</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Desarrollador</li>
+                    <li class="list-group-item">Auditor</li>
+                    <li class="list-group-item">Coordinador</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">https://www.linkedin.com/in/ing-roxana-cordova/?locale=es_ES</a>
+                </div>
+            </div>
+            <!-- columna #3 tarjeta de habilidades blandas -->
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Habilidades blandas </h5>
+                    <p class="card-text">Las habilidades blandas de un desarrollador son las cualidades personales y de interacción social que le permiten trabajar de forma efectiva con otros, resolver problemas y adaptarse a diferentes entornos.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Trabajo en equipo</li>
+                    <li class="list-group-item">Empatia</li>
+                    <li class="list-group-item">Pasiencia</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">https://www.linkedin.com/in/ing-roxana-cordova/?locale=es_ES</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- inicio de script -->
+    <!-- Se agrega el script para cambiar el color de fondo -->
+    <script>
+        const body = document.body;
+        const colors = [
+            'bg-primary-subtle',
+            'bg-success-subtle',
+            'bg-warning-subtle',
+            'bg-info-subtle',
+            'bg-danger-subtle'
+        ];
+        let colorIndex = 0;
+
+        function changeBackgroundColor() {
+            body.classList.remove(colors[colorIndex]);
+            colorIndex = (colorIndex + 1) % colors.length;
+            body.classList.add(colors[colorIndex]);
+        }
+
+        setInterval(changeBackgroundColor, 3000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
